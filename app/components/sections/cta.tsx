@@ -42,7 +42,7 @@ export default function StayInspired() {
           />
           <button
             type="submit"
-            className="bg-[#121212] hover:bg-[#2b241f] text-white text-[10px] font-medium tracking-widest uppercase px-4 py-2 transition-colors shrink-0"
+            className="bg-[#8C2E2C] hover:bg-[#6e2220] text-[#F6F1EB] border border-[#8C2E2C] text-[10px] font-medium tracking-widest uppercase px-4 py-2 transition-colors shrink-0"
           >
             SUBSCRIBE
           </button>

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 const cardsData = [
   {
@@ -56,22 +56,21 @@ export default function Work() {
               key={card.id}
               className="relative flex flex-col justify-center min-h-[340px] rounded-sm overflow-hidden shadow-sm group border border-[#e6ded2]"
             >
-              {/* Background Image Container */}
+              {/* Background Image Container (use fill to avoid layout gaps on mobile) */}
               <div className="absolute inset-0 z-0">
                 <Image
                   src={card.imageSrc}
                   alt={card.imageAlt}
-                  
-                  height={400}
-                    width={700}
-
+                  fill
                   className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                
-                {/* Soft Fade Overlay: Solid warm beige on the left, fading gradient to transparent on the right */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#d9c9b5] via-[#d9c9b5]/90 sm:via-[#d9c9b5]/85 to-transparent sm:to-transparent w-full sm:w-[50%]" />
+
+                {/* Soft Fade Overlay: warm beige on the left, fading to transparent on the right (50% on sm+ screens) */}
+                <div className="absolute left-0 top-0 bottom-0 w-full sm:w-1/2 bg-gradient-to-r from-[#d9c9b5] via-[#d9c9b5]/90 to-transparent pointer-events-none" />
               </div>
+
+             
 
               {/* Card Content Overlay */}
               <div className="relative z-10 p-6 sm:p-8 max-w-full sm:max-w-[55%] flex flex-col justify-between h-full">
