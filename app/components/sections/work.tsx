@@ -11,7 +11,7 @@ const cardsData = [
     features: [],
     buttonText: 'EXPLORE NOW',
     buttonLink: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&q=80&w=1200',
+    imageSrc: 'https://i.pinimg.com/736x/8d/d7/69/8dd769d6a90bd152839b9ae1a9ea4eba.jpg',
     imageAlt: 'Ethnic Kids Wear'
   },
   {
@@ -26,7 +26,7 @@ const cardsData = [
     ],
     buttonText: 'EXPLORE PACKAGES',
     buttonLink: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=1200',
+    imageSrc: 'https://i.pinimg.com/1200x/a9/48/3e/a9483e1996876614c4d2806aa3d9a58a.jpg',
     imageAlt: 'Wedding Couture Packages'
   },
   {
@@ -40,7 +40,7 @@ const cardsData = [
     ],
     buttonText: 'SCHEDULE NOW',
     buttonLink: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1200',
+    imageSrc: 'https://i.pinimg.com/736x/6a/7d/9a/6a7d9a56a891e97a9bf225d2fb28e267.jpg',
     imageAlt: 'Book Your Consultation'
   }
 ];
@@ -70,7 +70,7 @@ export default function Work() {
                 />
                 
                 {/* Soft Fade Overlay: Solid warm beige on the left, fading gradient to transparent on the right */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#d9c9b5] via-[#d9c9b5]/90 sm:via-[#d9c9b5]/85 to-transparent sm:to-transparent w-full sm:w-[85%]" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#d9c9b5] via-[#d9c9b5]/90 sm:via-[#d9c9b5]/85 to-transparent sm:to-transparent w-full sm:w-[50%]" />
               </div>
 
               {/* Card Content Overlay */}

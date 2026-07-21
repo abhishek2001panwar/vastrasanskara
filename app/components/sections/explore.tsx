@@ -16,49 +16,49 @@ const collections: Collection[] = [
     id: 1,
     title: 'BRIDAL COUTURE',
     // Luxury Indian bride with ornate veil and traditional jewellery
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/1200x/6a/2f/71/6a2f71cc2c7cf811906577abd310ed3d.jpg',
     link: '#',
   },
   {
     id: 2,
     title: 'MUHURTHAM COLLECTION',
     // Elegant Indian woman in a rich silk saree against warm moody backdrop
-    image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/1200x/9a/b4/eb/9ab4eb6c5c51ff0347c9597cfe7cfe81.jpg',
     link: '#',
   },
   {
     id: 3,
     title: 'MENSWEAR',
     // Groom/man in handcrafted designer Sherwani with embroidery
-    image: 'https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/736x/ca/36/e4/ca36e4a0085bade7a25c828f6e36125a.jpg',
     link: '#',
   },
   {
     id: 4,
     title: 'DESIGNER BLOUSES',
     // Intricate zardozi embroidery close-up details on ethnic couture
-    image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/1200x/4c/92/d3/4c92d3656fcec8af018df2b4ef2c8418.jpg',
     link: '#',
   },
   {
     id: 5,
     title: 'ETHNIC KIDS WEAR',
     // Children in traditional festive ethnic outfits
-    image: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/736x/53/e2/02/53e202e6b5e189d33977982f84baede1.jpg',
     link: '#',
   },
   {
     id: 6,
     title: 'ACCESSORIES',
     // Royal antique gold necklace and bridal jewellery set on marble
-    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/1200x/5e/53/e4/5e53e4e8d761ba34212863a531e9b833.jpg',
     link: '#',
   },
   {
     id: 7,
     title: 'GIFT CARDS',
     // Premium luxury gift packaging with ribbon and gold foil feel
-    image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=800',
+    image: 'https://i.pinimg.com/736x/da/3a/0d/da3a0d7e401e30aea3801d3ccdac14ec.jpg',
     link: '#',
   },
 ];
@@ -125,7 +125,7 @@ export default function Explore() {
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="object-cover object-center object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 
