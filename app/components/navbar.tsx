@@ -56,9 +56,7 @@ export default function Navbar() {
                 className="flex items-center gap-0.5 text-[9.5px] xl:text-[10.5px] 2xl:text-[11px] font-regular uppercase tracking-[0.06em] xl:tracking-[0.08em] text-[#38322d] transition-colors hover:text-[#8C2E2C] whitespace-nowrap"
               >
                 {item.title}
-                {item.dropdown && (
-                  <ChevronDown size={11} strokeWidth={1.5} className="shrink-0 opacity-70" />
-                )}
+               
               </Link>
             ))}
           </div>
@@ -139,9 +137,7 @@ export default function Navbar() {
                 className="flex items-center justify-between border-b border-[#ece3d8] py-3.5 text-[13px] font-medium uppercase tracking-wider text-[#38322d] hover:text-[#8C2E2C]"
               >
                 {item.title}
-                {item.dropdown && (
-                  <ChevronDown size={15} strokeWidth={1.5} />
-                )}
+                
               </Link>
             ))}
           </nav>
