@@ -15,14 +15,7 @@ function Top() {
           <span>Book a Consultation</span>
         </a>
 
-        {/* Vertical Divider for Desktop View */}
-        <span className="hidden sm:inline-block w-1 h-1 rounded-full bg-[#c3a368]/40" />
-
-        {/* Complimentary Shipping */}
-        <div className="flex items-center space-x-2 py-0.5">
-          <Truck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#c3a368] shrink-0" />
-          <span>Complimentary Shipping Pan India</span>
-        </div>
+       
 
       </div>
     </div>
