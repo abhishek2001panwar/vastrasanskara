@@ -55,14 +55,9 @@ export default function Footer() {
               CUSTOMER CARE
             </h4>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-[11px] text-[#5e5248]">
-              <div className="flex flex-col space-y-2">
-                <a href="#" className="hover:text-black transition-colors">Track Order</a>
-                <a href="#" className="hover:text-black transition-colors">Shipping & Delivery</a>
-                <a href="#" className="hover:text-black transition-colors">Returns & Exchange</a>
-              </div>
+              
               <div className="flex flex-col space-y-2">
                 <a href="#" className="hover:text-black transition-colors">FAQs</a>
-                <a href="#" className="hover:text-black transition-colors">Size Guide</a>
                 <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>
               </div>
             </div>
@@ -71,7 +66,7 @@ export default function Footer() {
           {/* 4. ABOUT US Column (Split into 2 sub-columns) */}
           <div className="lg:col-span-3 lg:pl-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
+              {/* <div>
                 <h4 className="text-xs font-semibold tracking-widest uppercase mb-4 text-[#2b241f]">
                   ABOUT US
                 </h4>
@@ -87,7 +82,7 @@ export default function Footer() {
                     <a href="#" className="hover:text-black transition-colors">Contact Us</a>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* 5. CONNECT Column */}
               <div>
@@ -125,24 +120,7 @@ export default function Footer() {
           </div>
 
           {/* Accepted Payment Methods */}
-          <div className="flex items-center space-x-4">
-            <span className="uppercase font-medium text-[9px] text-[#786758]">WE ACCEPT</span>
-            <div className="flex items-center space-x-3 text-xs font-semibold">
-              <span className="text-[#1a1f71] font-extrabold italic tracking-tighter">VISA</span>
-              
-              {/* Mastercard Symbol */}
-              <div className="flex items-center -space-x-1">
-                <span className="w-3.5 h-3.5 bg-[#eb001b] rounded-full opacity-90 inline-block" />
-                <span className="w-3.5 h-3.5 bg-[#f79e1b] rounded-full opacity-90 inline-block" />
-              </div>
-
-              {/* RuPay */}
-              <span className="text-[#00529b] font-black italic text-[11px]">RuPay<span className="text-[#f26522]">&gt;</span></span>
-              
-              {/* UPI */}
-              <span className="text-[#0f7938] font-bold text-[10px] tracking-tight">UPI</span>
-            </div>
-          </div>
+         
 
         </div>
       </div>
@@ -150,3 +128,22 @@ export default function Footer() {
     </footer>
   );
 }
+
+//  <div className="flex items-center space-x-4">
+//             <span className="uppercase font-medium text-[9px] text-[#786758]">WE ACCEPT</span>
+//             <div className="flex items-center space-x-3 text-xs font-semibold">
+//               <span className="text-[#1a1f71] font-extrabold italic tracking-tighter">VISA</span>
+              
+//               {/* Mastercard Symbol */}
+//               <div className="flex items-center -space-x-1">
+//                 <span className="w-3.5 h-3.5 bg-[#eb001b] rounded-full opacity-90 inline-block" />
+//                 <span className="w-3.5 h-3.5 bg-[#f79e1b] rounded-full opacity-90 inline-block" />
+//               </div>
+
+//               {/* RuPay */}
+//               <span className="text-[#00529b] font-black italic text-[11px]">RuPay<span className="text-[#f26522]">&gt;</span></span>
+              
+//               {/* UPI */}
+//               <span className="text-[#0f7938] font-bold text-[10px] tracking-tight">UPI</span>
+//             </div>
+//           </div>

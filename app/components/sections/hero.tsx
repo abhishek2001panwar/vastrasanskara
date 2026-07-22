@@ -68,7 +68,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             {/* Primary Button */}
           
-<button className="bg-[#8C2E2C] hover:bg-[#6e2220] text-[#F6F1EB] border border-[#8C2E2C] px-8 py-3.5 text-xs font-medium tracking-widest uppercase transition-colors shadow-sm">
+<button className="bg-[#C94B46] hover:bg-[#6e2220] text-[#F6F1EB] border border-[#8C2E2C] px-8 py-3.5 text-xs font-medium tracking-widest uppercase transition-colors shadow-sm">
   Explore Collection
 </button>
 

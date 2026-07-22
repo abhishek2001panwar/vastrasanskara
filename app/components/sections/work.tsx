@@ -6,8 +6,8 @@ import { CheckCircle2, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const cardsData = [
   {
     id: 1,
-    title: 'ETHNIC KIDS WEAR',
-    description: 'Timeless ethnic ensembles for your little ones.\n\nTraditional. Elegant. Adorable.',
+    title: 'Featured Brides',
+    description: '',
     features: [],
     buttonText: 'EXPLORE NOW',
     buttonLink: '#',
@@ -29,8 +29,22 @@ const cardsData = [
     imageSrc: 'https://i.pinimg.com/1200x/a9/48/3e/a9483e1996876614c4d2806aa3d9a58a.jpg',
     imageAlt: 'Wedding Couture Packages'
   },
-  {
+ 
+   {
     id: 3,
+    title: 'Hand embroidery/Artisan videos',
+    subtitle: '',
+    features: [
+      
+      
+    ],
+    buttonText: 'SCHEDULE NOW',
+    buttonLink: '#',
+    imageSrc: '/handemb.jpg',
+    imageAlt: 'Book Your Consultation'
+  },
+   {
+    id: 4,
     title: 'BOOK YOUR CONSULTATION',
     subtitle: 'Begin your couture journey with a one-on-one consultation.',
     features: [
@@ -42,7 +56,7 @@ const cardsData = [
     buttonLink: '#',
     imageSrc: 'https://i.pinimg.com/736x/6a/7d/9a/6a7d9a56a891e97a9bf225d2fb28e267.jpg',
     imageAlt: 'Book Your Consultation'
-  }
+  },
 ];
 
 export default function Work() {
