@@ -3,7 +3,7 @@ import { Calendar, Truck } from 'lucide-react';
 
 function Top() {
   return (
-    <div className="bg-[#C94B46] text-[#F6F1EB] py-2 sm:py-2.5 px-4 sm:px-6 border-b border-[#222222]">
+    <div className="bg-[#8B0000] text-[#F6F1EB] py-2 sm:py-2.5 px-4 sm:px-6 border-b border-[#222222]">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-8 text-[11px] sm:text-xs font-medium tracking-widest uppercase text-center">
         
         {/* Book a Consultation */}

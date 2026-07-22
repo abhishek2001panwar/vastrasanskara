@@ -19,21 +19,7 @@ const services = [
     title: "PREMIUM MATERIALS",
     description: "Finest silks, zardozi & heritage textiles.",
   },
-  {
-    icon: Truck,
-    title: "SECURE DELIVERY",
-    description: "Pan India & Worldwide secure shipping.",
-  },
-  {
-    icon: Lock,
-    title: "SECURE PAYMENTS",
-    description: "Multiple payment options & 100% secure checkout.",
-  },
-  {
-    icon: Ruler,
-    title: "MADE TO MEASURE",
-    description: "Personalized to your measurements and style.",
-  },
+  
   {
     icon: Headphones,
     title: "EXPERT CONSULTATION",
