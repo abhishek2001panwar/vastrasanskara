@@ -87,7 +87,7 @@ export default function Work() {
              
 
               {/* Card Content Overlay */}
-              <div className="relative z-10 p-6 sm:p-8 max-w-full sm:max-w-[55%] flex flex-col justify-between h-full">
+              <div className="relative z-10 p-6 sm:p-8 max-w-full sm:max-w-[65%] flex flex-col justify-between h-full">
                 <div>
                   {/* Title */}
                   <h1 className="text-lg font-serif tracking-widest text-[#2c241e] font-semibold uppercase mb-3">
