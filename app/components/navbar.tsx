@@ -12,6 +12,7 @@ import {
   ChevronDown,
   MessageCircle,
 } from "lucide-react";
+import Image from "next/image";
 
 const navItems = [
 //   { title: "SHOP", dropdown: true },
@@ -38,13 +39,19 @@ export default function Navbar() {
 
         {/* 1. Brand Logo Block */}
         <div className="shrink-0 pr-2">
-          <Link href="/" className="group block">
-            <h1 className="font-serif text-[17px] sm:text-[22px] lg:text-[22px] xl:text-[25px] 2xl:text-[28px] font-normal tracking-[0.03em] text-[#2f2925] leading-tight">
+          <Link href="/" className="group flex items-center">
+            <Image
+              src="/logomain.png"
+              alt="Vastra Sanskara Logo"
+              width={88}
+              height={88}
+              className="w-[88px] sm:w-[95px] h-auto object-contain"
+            />
+            <h1 className="font-serif text-[14px] sm:text-[17px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-normal tracking-[0.01em] text-[#2f2925] leading-none uppercase">
               VASTRASANSKARA
             </h1>
-            <p className="hidden sm:block font-serif text-[8px] xl:text-[9.5px] text-center uppercase tracking-[0.35em] text-[#655c55]">
-              Heritage Redefined
-            </p>
+           
+           
           </Link>
         </div>
 

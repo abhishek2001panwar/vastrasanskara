@@ -2,30 +2,26 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="bg-[#f0e8df] text-[#2b241f] font-sans border-t border-[#e2d7cb]">
       
       {/* Upper Main Footer Grid */}
-      <div className="max-w-[1440px] mx-auto px-6 py-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-6 sm:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-0 items-start">
           
           {/* 1. Brand Logo & Tagline */}
-          <div className="lg:col-span-3 flex flex-col items-center justify-center text-center py-4 lg:pr-8 lg:border-r border-[#ded3c5]">
+          <div className="lg:col-span-3 flex flex-col items-center justify-center text-center py-2 sm:py-4 lg:pr-8 lg:border-r border-[#ded3c5]">
             <div className="flex flex-col items-center">
-              {/* VS Logo Monogram */}
-              <span className="font-serif text-4xl tracking-wider text-[#a88653] font-light mb-1">
-                VS
-              </span>
-              {/* Brand Name */}
-              <h3 className="font-serif text-sm tracking-[0.25em] font-medium uppercase text-[#2b241f] mt-1">
-                VASTRASANSKARA
-              </h3>
-              {/* Sub-tagline */}
-              <p className="text-[9px] tracking-[0.3em] uppercase text-[#736456] mt-1">
-                HERITAGE REDEFINED
-              </p>
+              <Image
+                src="/logo.png"
+                alt="Vastra Sanskara Logo"
+                width={220}
+                height={120}
+                className="w-[180px] sm:w-[220px] mb-2 object-contain"
+              />
             </div>
           </div>
 
@@ -112,7 +108,7 @@ export default function Footer() {
 
       {/* Bottom Bar: Copyright & Payment Icons */}
       <div className="border-t border-[#ded3c5] bg-[#ebdcd0]">
-        <div className="max-w-[1440px] mx-auto px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-wider text-[#635447] gap-3">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-3.5 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-wider text-[#635447] gap-3">
           
           {/* Copyright */}
           <div>

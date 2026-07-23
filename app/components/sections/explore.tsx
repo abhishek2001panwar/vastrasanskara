@@ -30,7 +30,7 @@ const collections: Collection[] = [
     id: 3,
     title: 'MENSWEAR',
     // Groom/man in handcrafted designer Sherwani with embroidery
-    image: '/menswear.jpg',
+    image: '/menwear.jpg',
     link: '#',
   },
   {
@@ -44,7 +44,7 @@ const collections: Collection[] = [
     id: 5,
     title: 'ETHNIC KIDS WEAR',
     // Children in traditional festive ethnic outfits
-    image: '/ethnickidswear.jpg',
+    image: '/ethnicwear.jpg',
     link: '#',
   },
   {
@@ -58,7 +58,7 @@ const collections: Collection[] = [
     id: 7,
     title: 'GIFT CARDS',
     // Premium luxury gift packaging with ribbon and gold foil feel
-    image: '/giftcard.jpg',
+    image: '/originallogo.png',
     link: '#',
   },
 ];
@@ -118,14 +118,14 @@ export default function Explore() {
                 <a
                   key={item.id}
                   href={item.link}
-                  className="flex-shrink-0 w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] group relative overflow-hidden aspect-[4/5] bg-[#e6ded2] rounded-xs"
+                  className="flex-shrink-0 w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-15px)] group relative overflow-hidden aspect-[5/6] bg-[#e6ded2] rounded-xs"
                 >
                   {/* Background Image */}
                   <Image
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover object-center  transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="object-cover object-center object-top  transform transition-transform duration-700 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 

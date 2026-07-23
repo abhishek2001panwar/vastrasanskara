@@ -7,6 +7,7 @@ import Services from './components/sections/services'
 import Work from './components/sections/work'
 import StayInspired from './components/sections/cta'
 import Footer from './components/sections/footer'
+import TestimonialSection from './components/sections/testimonial'
 
 function page() {
   return (
@@ -17,6 +18,7 @@ function page() {
       <Explore />
       <Services />
       <Work />
+      <TestimonialSection />
       <StayInspired />
       <Footer />
     </div>
