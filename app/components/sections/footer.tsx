@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="lg:col-span-3 flex flex-col items-center justify-center text-center py-2 sm:py-4 lg:pr-8 lg:border-r border-[#ded3c5]">
             <div className="flex flex-col items-center">
               <Image
-                src="/logo.png"
+                src="/footerlogo.png"
                 alt="Vastra Sanskara Logo"
                 width={220}
                 height={120}

@@ -58,7 +58,7 @@ const collections: Collection[] = [
     id: 7,
     title: 'GIFT CARDS',
     // Premium luxury gift packaging with ribbon and gold foil feel
-    image: '/originallogo.png',
+    image: '/image.png',
     link: '#',
   },
 ];

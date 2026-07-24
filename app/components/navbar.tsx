@@ -165,15 +165,13 @@ export default function Navbar() {
         <div className="shrink-0 pr-2">
           <Link href="/" className="group flex items-center gap-2">
             <Image
-              src="/logomain.png"
+              src="/navbarlogo.png"
               alt="Vastra Sanskara Logo"
-              width={88}
+              width={120}
               height={88}
-              className="w-[88px] sm:w-[95px] h-auto object-contain"
+              className="w-[88px] sm:w-[150px] h-auto object-contain"
             />
-            <h1 className="font-serif text-[14px] sm:text-[17px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-normal tracking-[0.01em] text-[#2f2925] leading-none uppercase">
-              VASTRASANSKARA
-            </h1>
+           
           </Link>
         </div>
 
