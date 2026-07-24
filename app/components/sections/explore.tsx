@@ -125,7 +125,7 @@ export default function Explore() {
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover object-center object-top  transform transition-transform duration-700 ease-out"
+                    className="object-cover object-center object-top  rounded-md transform transition-transform duration-700 ease-out"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 
