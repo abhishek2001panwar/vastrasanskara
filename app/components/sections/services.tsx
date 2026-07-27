@@ -26,12 +26,12 @@ const services = [
     description: "One-on-one guidance from our designers.",
   },
     {
-    icon: Truck,
+    icon: Headphones,
     title: "Made to Measure",
     description: "Personalised to your measurements and style",
   },
    {
-    icon: Headphones,
+    icon: Truck,
     title: "Secure Delivery",
     description: "Pan india and worldwide secure shipping.",
   },
