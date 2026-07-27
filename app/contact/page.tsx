@@ -162,7 +162,7 @@ Message: ${message}`;
             <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[650px] overflow-hidden rounded-2xl">
 
               <Image
-                src="/bridenew.webp"
+                src="/telephone.jpg"
                 alt="Bespoke Collection"
                 fill
                 priority
