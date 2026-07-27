@@ -159,19 +159,27 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#e5ddd3] bg-[#F7F2EB] select-none">
-      <div className="mx-auto flex h-[76px] sm:h-[84px] max-w-[1700px] items-center justify-between px-3 sm:px-6 lg:px-8 gap-2 lg:gap-4">
+      <div className="mx-auto flex h-[76px] sm:h-[86px] max-w-[1700px] items-center justify-between px-3 sm:px-6 lg:px-8 gap-2 lg:gap-4">
         
         {/* 1. Brand Logo Block */}
         <div className="shrink-0 pr-2">
-          <Link href="/" className="group flex items-center gap-2">
+          <Link href="/" className="group flex items-center">
             <Image
-              src="/navbarlogo.png"
+              src="/logomain.png"
               alt="Vastra Sanskara Logo"
-              width={120}
-              height={88}
-              className="w-[88px] sm:w-[150px] h-auto object-contain"
+              width={110}
+              height={80}
+              className="w-[88px] sm:w-[120px] h-auto object-contain"
             />
-           
+
+           <div className="flex flex-col items-center">
+              <h1 className=" flex flex-col  text-[14px] text-[#8E7D65] sm:text-[20px] font-serif uppercase text-[#2f2925]">
+              Vastrasanskara 
+            </h1>
+           < h1 className="text-[10px] text-[#8E7D65] tracking-wide font-serif uppercase items-center sm:text-[12px]  text-[#5e5248]">
+              Heritage Redefined
+            </h1>
+           </div>
           </Link>
         </div>
 
