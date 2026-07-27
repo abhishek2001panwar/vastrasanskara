@@ -29,7 +29,12 @@ const services = [
     icon: Truck,
     title: "Made to Measure",
     description: "Personalised to your measurements and style",
-  }
+  },
+   {
+    icon: Headphones,
+    title: "Secure Delivery",
+    description: "Pan india and worldwide secure shipping.",
+  },
 
   
 ];
