@@ -45,12 +45,12 @@ const navItems: NavItem[] = [
           { title: "Bridal Accessories", href: "/bride/bridal-accessories" },
         ],
       },
-      {
-        groupTitle: "Services",
-        items: [
-          { title: "Bridal Consultation", href: "/bride/consultation" },
-        ],
-      },
+      // {
+      //   groupTitle: "Services",
+      //   items: [
+      //     { title: "Bridal Consultation", href: "/bride/consultation" },
+      //   ],
+      // },
     ],
   },
   {
@@ -73,12 +73,12 @@ const navItems: NavItem[] = [
           { title: "Kurta & Bandhgala Sets", href: "/groom/kurta-bandhgala" },
         ],
       },
-      {
-        groupTitle: "Services",
-        items: [
-          { title: "Groom Consultation", href: "/groom/consultation" },
-        ],
-      },
+      // {
+      //   groupTitle: "Services",
+      //   items: [
+      //     { title: "Groom Consultation", href: "/groom/consultation" },
+      //   ],
+      // },
     ],
   },
   {
@@ -137,13 +137,25 @@ const navItems: NavItem[] = [
       {
         groupTitle: "Consultation",
         items: [
-          { title: "Wedding Planning Consultation", href: "/weddings/planning-consultation" },
+        
           { title: "Styling Appointment", href: "/weddings/styling-appointment" },
         ],
       },
     ],
   },
-  { title: "JOURNAL", href: "/journal" },
+  { title: "JOURNAL",
+    groups: [
+      {
+        groupTitle: "Journal",
+        items: [
+          { title: "Team", href: "/team" },
+          { title: "Blog", href: "/blog" },
+        ],
+      },
+     
+    ],
+    
+    href: "/journal" },
   { title: "CONTACT", href: "/contact" },
 ];
 
@@ -164,13 +176,7 @@ export default function Navbar() {
         {/* 1. Brand Logo Block */}
         <div className="shrink-0 pr-2">
           <Link href="/" className="group flex items-center">
-            <Image
-              src="/logomain.png"
-              alt="Vastra Sanskara Logo"
-              width={110}
-              height={80}
-              className="w-[88px] sm:w-[120px] h-auto object-contain"
-            />
+            
 
            <div className="flex flex-col items-center">
               <h1 className=" flex flex-col  text-[14px] text-[#8E7D65] sm:text-[20px] font-serif uppercase text-[#2f2925]">
@@ -228,7 +234,7 @@ export default function Navbar() {
         </nav>
 
         {/* 3. Right Action Icons */}
-        <div className="hidden lg:flex items-center gap-4 xl:gap-5 text-[#2f2925] shrink-0 pl-2">
+        {/* <div className="hidden lg:flex items-center gap-4 xl:gap-5 text-[#2f2925] shrink-0 pl-2">
           <a
             href="https://www.instagram.com/vastrasanskara?igsh=N2puMzExcm9wdDAw"
             target="_blank"
@@ -250,7 +256,7 @@ export default function Navbar() {
           >
             <MessageCircle className="w-4 h-4 stroke-[1.5]" />
           </a>
-        </div>
+        </div> */}
 
         {/* 4. Mobile Controls Toggle Button */}
         <div className="flex lg:hidden items-center gap-4 text-[#2f2925]">
@@ -327,7 +333,7 @@ export default function Navbar() {
           </nav>
 
           {/* Social Icons for Mobile Drawer */}
-          <div className="mt-6 pt-4 border-t border-[#ece3d8] flex items-center justify-center gap-4 text-[#2f2925]">
+          {/* <div className="mt-6 pt-4 border-t border-[#ece3d8] flex items-center justify-center gap-4 text-[#2f2925]">
             <a
               href="https://www.instagram.com/vastrasanskara?igsh=N2puMzExcm9wdDAw"
               target="_blank"
@@ -349,7 +355,7 @@ export default function Navbar() {
             >
               <MessageCircle className="h-4 w-4" strokeWidth={1.8} />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

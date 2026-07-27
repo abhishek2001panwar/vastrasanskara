@@ -88,15 +88,23 @@ export default function Footer() {
                 <div className="flex flex-col space-y-2.5 text-[11px] text-[#5e5248]">
                   <a href="tel:+918884468845" className="flex items-center space-x-2 hover:text-black transition-colors">
                     <Phone className="w-3.5 h-3.5 text-[#a88653] shrink-0" />
-                    <span>+91 88844 68845</span>
+                    <span>+91 80883 16661</span>
                   </a>
-                  <a href="mailto:hello@vastrasanskara.com" className="flex items-center space-x-2 hover:text-black transition-colors">
+                  <a href="tel:+919620906661" className="flex items-center space-x-2 hover:text-black transition-colors">
+                    <Phone className="w-3.5 h-3.5 text-[#a88653] shrink-0" />
+                    <span>+91 96209 06661</span>
+                  </a>
+                  <a href="mailto:vastrasanskara@gmail.com" className="flex items-center space-x-2 hover:text-black transition-colors">
                     <Mail className="w-3.5 h-3.5 text-[#a88653] shrink-0" />
-                    <span className="truncate">hello@vastrasanskara.com</span>
+                    <span className="truncate">vastrasanskara@gmail.com</span>
                   </a>
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="w-3.5 h-3.5 text-[#a88653] shrink-0" />
-                    <span>Bengaluru, Karnataka, India</span>
+                  <div className="flex items-start space-x-2">
+                    <MapPin className="w-3.5 h-3.5 text-[#a88653] shrink-0 mt-0.5" />
+                    <address className="not-italic text-[11px] text-[#5e5248] leading-5">
+                      337/B, Ground Floor<br />
+                      18th Cross, Sadashivanagar<br />
+                      Bengaluru
+                    </address>
                   </div>
                 </div>
               </div>

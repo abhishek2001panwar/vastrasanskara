@@ -25,6 +25,13 @@ const services = [
     title: "EXPERT CONSULTATION",
     description: "One-on-one guidance from our designers.",
   },
+    {
+    icon: Truck,
+    title: "Made to Measure",
+    description: "Personalised to your measurements and style",
+  }
+
+  
 ];
 
 export default function Services() {

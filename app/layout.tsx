@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import Navbar from "./components/navbar";
+import Top from "./components/sections/top";
 export const serif = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -27,7 +29,10 @@ export default function RootLayout({
       lang="en"
       className={`${sans.variable} ${serif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Top />
+        <Navbar />
+        {children}</body>
     </html>
   );
 }

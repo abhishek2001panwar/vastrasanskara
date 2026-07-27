@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/navbar'
+
 import Hero from './components/sections/hero'
 import Top from './components/sections/top'
 import Explore from './components/sections/explore'
@@ -12,8 +12,7 @@ import TestimonialSection from './components/sections/testimonial'
 function page() {
   return (
     <div>
-      <Top  />
-      <Navbar />
+     
       <Hero />
       <Explore />
       <Services />
