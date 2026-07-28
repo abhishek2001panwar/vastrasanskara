@@ -17,13 +17,13 @@ export default function AboutPage() {
   const ctaRef = useRef(null);
   const isCtaInView = useInView(ctaRef, { once: true, margin: "-80px" });
 
-  // Minimalist letter-by-letter or subtle fade-up helper config
+  // Fixed TypeScript-compatible Framer Motion variants
   const fadeUp = {
     hidden: { opacity: 0, y: 24 },
-    visible: (customDelay = 0) => ({
+    visible: (customDelay: number = 0) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, delay: customDelay, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.8, delay: customDelay, ease: [0.16, 1, 0.3, 1] as const }
     })
   };
 
@@ -123,7 +123,6 @@ export default function AboutPage() {
             className="lg:col-span-5"
           >
             <div className="relative bg-[#f6f1eb] p-8 sm:p-12 border border-[#c8b8a8] shadow-2xl overflow-hidden group">
-              {/* Subtle background corner accent */}
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#8B0000]/5 rounded-full blur-2xl transition-all duration-700 group-hover:scale-125" />
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#8B0000]/10 to-transparent pointer-events-none" />
               
@@ -261,7 +260,6 @@ export default function AboutPage() {
 
       {/* ================= CALL TO ACTION ================= */}
       <section ref={ctaRef} className="py-24 sm:py-28 px-6 text-center relative overflow-hidden">
-        {/* Decorative background glow */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40">
           <div className="w-[500px] h-[200px] bg-[#c8b8a8]/30 blur-3xl rounded-full" />
         </div>
