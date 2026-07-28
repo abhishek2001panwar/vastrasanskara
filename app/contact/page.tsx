@@ -157,22 +157,19 @@ Message: ${message}`;
 
 
           {/* ================= LEFT SIDE - FULL IMAGE ================= */}
-          <div className="lg:col-span-6 w-full">
-
-            <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[650px] overflow-hidden rounded-2xl">
-
-              <Image
-                src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Bespoke Collection"
-                fill
-                priority
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-
-            </div>
-
-          </div>
+         {/* ================= LEFT SIDE - FULL IMAGE ================= */}
+<div className="lg:col-span-6 w-full flex items-center justify-center">
+  <div className="relative w-full aspect-[4/5] sm:aspect-[4/5] lg:aspect-[3/4] max-h-[650px] overflow-hidden rounded-2xl shadow-sm">
+    <Image
+      src="/contactimage.png"
+      alt="Bespoke Collection"
+      fill
+      priority
+      className="object-cover object-center w-full h-full"
+      sizes="(max-width: 1024px) 100vw, 50vw"
+    />
+  </div>
+</div>
 
 
           {/* ================= RIGHT SIDE ================= */}
