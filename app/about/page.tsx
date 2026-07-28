@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   const storyRef = useRef(null);
@@ -31,7 +32,7 @@ export default function AboutPage() {
     <div className="bg-[#e0d3c5] text-[#1c1714] min-h-screen selection:bg-[#8B0000] selection:text-[#F6F1EB] overflow-x-hidden">
       
       {/* ================= HEADER BANNER ================= */}
-      <section className="relative w-full py-16 px-6 sm:px-12 bg-[#e0d3c5] border-b border-[#c8b8a8]/40">
+      <section className="relative w-full py-10 px-6 sm:px-12 bg-[#e0d3c5] border-b border-[#c8b8a8]/40">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <motion.div
             initial="hidden"
@@ -41,19 +42,28 @@ export default function AboutPage() {
             className="inline-block"
           >
             <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-[#6b5d50] px-4 py-1.5 border border-[#b39f8d]/40 rounded-full">
-              ESTABLISHED 2016 • BENGALURU
+              ABOUT
             </p>
           </motion.div>
           
-          <motion.h1 
+          {/* Logo Brand Name Header */}
+          <motion.div
             initial="hidden"
             animate="visible"
             custom={0.15}
             variants={fadeUp}
-            className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-[1.05] text-[#1c1714] font-normal tracking-tight"
+            className="flex justify-center items-center py-2"
           >
-            ABOUT VASTRASANSKARA
-          </motion.h1>
+            <div className="relative w-[260px] sm:w-[360px] h-[170px] sm:h-[260px] ">
+              <Image
+                src="/logo.png" 
+                alt="Vastrasanskara Logo"
+                fill
+                priority
+                className="object-cover  filter"
+              />
+            </div>
+          </motion.div>
           
           {/* Creative Minimalist Animated Line */}
           <motion.div 
@@ -74,7 +84,7 @@ export default function AboutPage() {
             variants={fadeUp}
             className="text-xs sm:text-sm text-[#52463b] tracking-[0.25em] uppercase font-light"
           >
-            Heritage Redefined
+             • Established 2016 • Bengaluru
           </motion.p>
         </div>
       </section>
@@ -187,9 +197,9 @@ export default function AboutPage() {
             <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#6b5d50] mb-3">
               THE VISIONARY BEHIND THE BRAND
             </p>
-            <h1 className="font-serif text-3xl sm:text-5xl text-[#1c1714]">
+            <h2 className="font-serif text-3xl sm:text-5xl text-[#1c1714]">
               About the Founder
-            </h1>
+            </h2>
             <div className="my-5 flex items-center justify-center gap-3">
               <div className="w-12 h-[1px] bg-[#b39f8d]" />
               <div className="w-1.5 h-1.5 bg-[#8B0000] rotate-45" />
@@ -278,12 +288,10 @@ export default function AboutPage() {
           </h2>
           <div className="pt-4">
             <Link
-              href="https://wa.me/918088316661?text=Hello,%20I%20would%20like%20to%20explore%20your%20couture%20collection."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:vastrasanskara@gmail.com?subject=Inquiry%20Regarding%20Couture%20Collection"
               className="inline-block bg-[#8B0000] hover:bg-[#6e2220] text-[#F6F1EB] border border-[#8C2E2C] px-10 py-4 text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
             >
-              Connect On WhatsApp
+              Email Us
             </Link>
           </div>
         </motion.div>

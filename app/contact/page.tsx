@@ -162,7 +162,7 @@ Message: ${message}`;
             <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[650px] overflow-hidden rounded-2xl">
 
               <Image
-                src="/telephone.jpg"
+                src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Bespoke Collection"
                 fill
                 priority
