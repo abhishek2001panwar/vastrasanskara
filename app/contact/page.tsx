@@ -131,10 +131,6 @@ Message: ${message}`;
         {/* ================= SECTION HEADING ================= */}
         <div className="text-center mb-12 lg:mb-16">
 
-          <p className="text-[11px] font-medium uppercase tracking-[0.3em] text-[#8c7460] mb-2">
-            REACH OUT TO US
-          </p>
-
           <h2 className="font-serif text-[38px] sm:text-[50px] lg:text-[58px] tracking-tight text-[#1c1714] uppercase leading-tight">
             Connect With Us
           </h2>
