@@ -29,8 +29,23 @@ const testimonials: Testimonial[] = [
     location: "Verified Customer",
     reviewInfo: "3 reviews • 11 photos",
   },
+  {
+    id: 3,
+    quote:
+      "They helped me so much during my engagement. I approached them just two weeks before the event, and they supported me with everything  -  from selecting the outfits to suggesting designs and making all the adjustments I requested. The stitching, the handwork on the blouse, and the additional design details were all excellent. I’m really happy with their work.",
+    author: "Arsha S",
+    location: "Verified Customer",
+    reviewInfo: "2 reviews",
+  },
+  {
+    id: 4,
+    quote:
+      "One of the best designers in town! He has handled all my shows and even my personal events for the past 10 years. He’s always my first choice for any occasion. From helping us select the right fabrics to ensuring we look perfect in our attire, he takes care of everything. Thank you, buddy, for the recent outfit. ❤️",
+    author: "Sanal Nair",
+    location: "Verified Customer",
+    reviewInfo: "10 reviews • 1 photo",
+  },
 ];
-
 export default function TestimonialSection() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
