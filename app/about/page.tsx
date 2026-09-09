@@ -126,12 +126,10 @@ export default function AboutPage() {
             className="lg:col-span-7 space-y-6 sm:space-y-8"
           >
             <div className="space-y-3">
-              <span className="text-[10px] tracking-[0.3em] uppercase text-[#8B0000] font-medium block">
+              <span className="text-[15px] tracking-[0.3em] uppercase text-[#8B0000] font-medium block">
                 OUR PHILOSOPHY
               </span>
-              <h1 className="font-serif  text-2xl sm:text-4xl lg:text-5xl text-[#1c1714] leading-[1.2]">
-                What Indian Clothing Could Become
-              </h1>
+            
             </div>
             
             <div className="w-12 h-[1px] bg-[#8c7460]" />
