@@ -79,7 +79,7 @@ Name: ${fullName}
 Phone: ${mobileNumber}
 Message: ${message}`;
 
-      const whatsappUrl = `https://wa.me/918088316661?text=${encodeURIComponent(
+      const whatsappUrl = `https://wa.me/9196209 06661?text=${encodeURIComponent(
         whatsappMessage
       )}`;
 
@@ -325,7 +325,7 @@ Message: ${message}`;
 
               {/* Phone */}
               <a
-                href="tel:+918088316661"
+                href="tel:+9196209 06661"
                 className="flex items-center gap-3 hover:text-[#8B0000] transition-colors"
               >
 
@@ -346,7 +346,7 @@ Message: ${message}`;
                 </svg>
 
                 <span>
-                  +91 8088316661
+                  +91 96209 06661
                 </span>
 
               </a>

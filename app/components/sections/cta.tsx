@@ -6,7 +6,7 @@ import { MessageCircle, PhoneCall } from 'lucide-react';
 export default function StayInspired() {
   const [email, setEmail] = useState('');
 
-  const whatsappLink = "https://wa.me/918088316661";
+  const whatsappLink = "https://wa.me/919620906661";
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Subscribed email:', email);

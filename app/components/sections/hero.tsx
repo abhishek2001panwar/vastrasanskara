@@ -32,7 +32,7 @@ Name: ${name}
 Preferred Date: ${date}
 Preferred Time: ${time}`;
 
-    const whatsappUrl = `https://wa.me/918088316661?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/919620906661?text=${encodeURIComponent(
       message
     )}`;
 
