@@ -322,7 +322,7 @@ export default function AboutPage() {
           </h2>
           <div className="pt-4">
             <Link
-              href="mailto:vastrasanskara@gmail.com?subject=Inquiry%20Regarding%20Couture%20Collection"
+              href="mailto:vastrasanskara.co@gmail.com?subject=Inquiry%20Regarding%20Couture%20Collection"
               className="inline-block bg-[#8B0000] hover:bg-[#6e2220] text-[#F6F1EB] border border-[#8C2E2C] px-10 py-4 text-xs font-medium tracking-[0.25em] uppercase transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
             >
               Email Us
