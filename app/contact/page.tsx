@@ -317,7 +317,7 @@ Message: ${message}`;
                 </svg>
 
                 <span>
-                  vastrasanskara@gmail.com
+                  vastrasanskara.co@gmail.com
                 </span>
 
               </a>

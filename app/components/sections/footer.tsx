@@ -91,9 +91,9 @@ export default function Footer() {
                     <span>+91 96209 06661</span>
                   </a>
                  
-                  <a href="mailto:vastrasanskara@gmail.com" className="flex items-center space-x-2 hover:text-black transition-colors">
+                  <a href="mailto:vastrasanskara.co@gmail.com" className="flex items-center space-x-2 hover:text-black transition-colors">
                     <Mail className="w-3.5 h-3.5 text-[#a88653] shrink-0" />
-                    <span className="truncate">vastrasanskara@gmail.com</span>
+                    <span className="truncate">vastrasanskara.co@gmail.com</span>
                   </a>
                   <div className="flex items-start space-x-2">
                     <MapPin className="w-3.5 h-3.5 text-[#a88653] shrink-0 mt-0.5" />
