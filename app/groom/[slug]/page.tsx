@@ -36,11 +36,11 @@ function getImagesForCategory(slug: string) {
 
   if (slug === "tuxedos") {
     // 1 to 21 images, all portrait
-    return Array.from({ length: 21 }, (_, index) => {
+    return Array.from({ length: 8 }, (_, index) => {
       const imgNum = index + 1;
       return {
         id: `tux-${imgNum}`,
-        src: `/tux/${imgNum}.png`,
+        src: `/tux/${imgNum}.jpg`,
         alt: `Tuxedo Look ${imgNum}`,
         orientation: "portrait" as const,
       };
@@ -50,7 +50,7 @@ function getImagesForCategory(slug: string) {
   // Fallback default
   return Array.from({ length: 12 }, (_, index) => ({
     id: `${slug}-${index + 1}`,
-    src: `/images/groom/${slug}/${index + 1}.jpg`,
+    src: `/tux/{index + 1}.jpg`,
     alt: `Groom Style ${index + 1}`,
     orientation: "portrait" as const,
   }));
@@ -78,7 +78,7 @@ export default async function GroomCategoryPage({ params }: PageProps) {
   const categoryImages = getImagesForCategory(slug);
 
   // Toggle this to false when you are ready to reveal the full gallery
-  const isUnderConstruction = true;
+  const isUnderConstruction = false;
 
   if (isUnderConstruction) {
     return (
