@@ -36,7 +36,7 @@ function getImagesForCategory(slug: string) {
 
   if (slug === "tuxedos") {
     // 1 to 21 images, all portrait
-    return Array.from({ length: 8 }, (_, index) => {
+    return Array.from({ length: 7 }, (_, index) => {
       const imgNum = index + 1;
       return {
         id: `tux-${imgNum}`,
