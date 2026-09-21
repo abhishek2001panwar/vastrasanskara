@@ -143,6 +143,11 @@ const navItems: NavItem[] = [
       },
     ],
   },
+
+  {
+  title: "THE COLLECTION",
+  href: "/collection",
+},
   { title: "JOURNAL",
     groups: [
       {
