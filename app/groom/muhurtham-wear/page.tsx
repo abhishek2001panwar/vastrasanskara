@@ -41,7 +41,7 @@ export default function MuhurthamWearPage() {
               className="inline-block font-sans text-[9px] uppercase tracking-[0.45em] text-[#1B1917]/45 mb-3"
               style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
             >
-              Collection
+              Collection . 
             </span>
 
             {/* High-fashion Cormorant display title */}
