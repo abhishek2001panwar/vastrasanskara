@@ -1,8 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { muhurthamLooks } from "@/data/muhurtham";
+import LookImageCarousel from "../../../components/LookImageCarousel";
 
 type Props = {
   params: Promise<{
@@ -30,34 +31,13 @@ export default async function LookDetailPage({ params }: Props) {
   const nextLook =
     muhurthamLooks[(lookIndex + 1) % muhurthamLooks.length];
 
-  // Dynamic rhythm: 1 Center -> 2 Side-by-Side -> 1 Center -> 2 Side-by-Side...
-  const layoutSections: { type: "single" | "pair"; items: string[] }[] = [];
-  let i = 0;
-  let expectSingle = true;
-
-  while (i < images.length) {
-    if (expectSingle) {
-      layoutSections.push({ type: "single", items: [images[i]] });
-      i += 1;
-      expectSingle = false;
-    } else {
-      layoutSections.push({
-        type: "pair",
-        items: images.slice(i, i + 2),
-      });
-      i += 2;
-      expectSingle = true;
-    }
-  }
-
   return (
     <main className="relative min-h-screen bg-[#FAF8F5] text-[#1A1816] antialiased selection:bg-[#EAE4D9]">
       
       {/* =========================================================
-          LEFT-SIDE COLLECTION BACK NAVIGATION
-          (Positioned below your global top navbar, floating sticky)
+          LEFT-SIDE FLOATING BACK NAVIGATION (Below Top Navbar)
       ========================================================= */}
-      <div className="fixed top-24 md:top-42 left-4 md:left-8 z-30 pointer-events-none">
+      <div className="fixed top-24 md:top-32 left-4 md:left-8 z-30 pointer-events-none">
         <Link
           href="/groom/muhurtham-wear"
           className="pointer-events-auto group inline-flex items-center gap-2.5 rounded-full border border-stone-300/70 bg-[#FAF8F5]/85 px-4 py-2 text-[9px] font-medium uppercase tracking-[0.28em] text-stone-600 shadow-[0_4px_20px_rgba(0,0,0,0.03)] backdrop-blur-md transition-all duration-300 hover:border-stone-900 hover:bg-[#FAF8F5] hover:text-stone-950 hover:shadow-md"
@@ -72,76 +52,29 @@ export default async function LookDetailPage({ params }: Props) {
       </div>
 
       {/* =========================================================
-          TITLE & LABEL
+          TITLE & METADATA
       ========================================================= */}
       <section className="pt-24 md:pt-32 pb-8 md:pb-12 px-6 text-center">
         <span className="text-[9px] uppercase tracking-[0.35em] text-stone-400 block mb-3 font-medium">
           Muhurtham Atelier
         </span>
-       
+      
         <p className="mt-3 text-[10px] uppercase tracking-[0.25em] text-stone-400">
           Vastra Sanskar
         </p>
       </section>
 
       {/* =========================================================
-          1 -> 2 -> 1 EDITORIAL RHYTHM (ALL PORTRAIT, 1px GAP)
+          SWIPEABLE PORTRAIT CAROUSEL WITH BOTTOM DOTS
       ========================================================= */}
-      <div className="mx-auto max-w-5xl px-3 md:px-6">
-        {layoutSections.map((section, sIndex) => {
-          if (section.type === "single") {
-            const singleImg = section.items[0];
-            return (
-              <div
-                key={`single-${sIndex}`}
-                className={`${sIndex > 0 ? "mt-[1px]" : ""}`}
-              >
-                <div className="relative mx-auto aspect-[3/4] md:aspect-[4/5] w-full max-w-[1020px] overflow-hidden bg-stone-200/50">
-                  <Image
-                    src={singleImg}
-                    alt={`${look.name} editorial ${sIndex + 1}`}
-                    fill
-                    priority={sIndex === 0}
-                    sizes="(max-width: 1024px) 100vw, 1020px"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            );
-          }
-
-          return (
-            <div
-              key={`pair-${sIndex}`}
-              className={`mt-[1px] grid gap-[1px] ${
-                section.items.length === 2
-                  ? "grid-cols-1 md:grid-cols-2"
-                  : "grid-cols-1 max-w-[1020px] mx-auto"
-              }`}
-            >
-              {section.items.map((imgSrc, pIndex) => (
-                <div
-                  key={`${imgSrc}-${pIndex}`}
-                  className="relative aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-stone-200/50"
-                >
-                  <Image
-                    src={imgSrc}
-                    alt={`${look.name} detail ${sIndex}-${pIndex}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-1000 ease-out hover:scale-[1.015]"
-                  />
-                </div>
-              ))}
-            </div>
-          );
-        })}
-      </div>
+      <section className=" md:px-8 pb-16">
+        <LookImageCarousel images={images} altTitle={look.name} />
+      </section>
 
       {/* =========================================================
           ENHANCED EDITORIAL NAVIGATION
       ========================================================= */}
-      <section className="mt-28 md:mt-40 border-t border-stone-200">
+      <section className="mt-20 md:mt-32 border-t border-stone-200">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-stone-200">
           
           {/* PREVIOUS */}
@@ -173,7 +106,7 @@ export default async function LookDetailPage({ params }: Props) {
                     Previous Look
                   </span>
                 </div>
-               
+             
               </div>
             </div>
           </Link>
@@ -207,7 +140,7 @@ export default async function LookDetailPage({ params }: Props) {
                     className="transition-transform duration-300 group-hover:translate-x-1.5"
                   />
                 </div>
-              
+               
               </div>
             </div>
           </Link>
