@@ -62,7 +62,7 @@ const navItems: NavItem[] = [
           { title: "Muhurtham Wear", href: "/groom/muhurtham-wear" },
           { title: "Indo-Western", href: "/groom/indo-western" },
           { title: "Party Wear Suits", href: "/groom/party-wear-suits" },
-          { title: "Tuxedos", href: "/groom/tuxedos" },
+          { title: "Tuxedos", href: "/groom/tuxedo" },
           { title: "Sherwani", href: "/groom/sherwani" },
 
         ],
