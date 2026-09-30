@@ -41,8 +41,9 @@ export const indoWesternCollections: IndoWesternCollection[] = [
         hero: "/images/groom/indo-western/gen-iq/look-02/1.webp",
         images: [
           "/images/groom/indo-western/gen-iq/look-02/1.webp",
-          "/images/groom/indo-western/gen-iq/look-02/2.webp",
           "/images/groom/indo-western/gen-iq/look-02/3.webp",
+                    "/images/groom/indo-western/gen-iq/look-02/2.webp",
+
        
         ],
       },
@@ -51,7 +52,7 @@ export const indoWesternCollections: IndoWesternCollection[] = [
         id: "03",
         slug: "look-03",
         name: "Look 03",
-        hero: "/images/groom/indo-western/gen-iq/look-03/1.webp",
+        hero: "/images/groom/indo-western/gen-iq/look-03/2.webp",
         images: [
           "/images/groom/indo-western/gen-iq/look-03/1.webp",
           "/images/groom/indo-western/gen-iq/look-03/2.webp",
