@@ -55,7 +55,7 @@ export default async function CollectionPage({ params }: Props) {
           </p>
 
           <h1 className="text-[42px] font-serif leading-[1.05] tracking-[-0.025em] md:text-[64px]">
-            {collection.name}
+            Tuxedo Wear
           </h1>
 
         </div>

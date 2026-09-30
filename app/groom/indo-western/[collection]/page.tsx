@@ -55,8 +55,8 @@ export default async function CollectionPage({ params }: Props) {
           </p>
 
           <h1 className="text-[42px] font-serif leading-[1.05] tracking-[-0.025em] md:text-[64px]">
-            GEN IQ
-          </h1>
+           Indo Western Wear
+          </h1> 
 
         </div>
 
